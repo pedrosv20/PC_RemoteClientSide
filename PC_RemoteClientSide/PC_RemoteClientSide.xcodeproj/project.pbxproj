@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07E3382D23ACBF4100A46F06 /* PC_RemoteClientSide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PC_RemoteClientSide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07E3382D23ACBF4100A46F06 /* PC-RemoteClientSide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PC-RemoteClientSide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E3383023ACBF4100A46F06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07E3383223ACBF4100A46F06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		07E3383423ACBF4100A46F06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		07E3382E23ACBF4100A46F06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07E3382D23ACBF4100A46F06 /* PC_RemoteClientSide.app */,
+				07E3382D23ACBF4100A46F06 /* PC-RemoteClientSide.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,7 +90,7 @@
 			);
 			name = PC_RemoteClientSide;
 			productName = PC_RemoteClientSide;
-			productReference = 07E3382D23ACBF4100A46F06 /* PC_RemoteClientSide.app */;
+			productReference = 07E3382D23ACBF4100A46F06 /* PC-RemoteClientSide.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -293,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = ZSLUMCNRNL;
 				INFOPLIST_FILE = PC_RemoteClientSide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,7 +301,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PedroVargas.PC-RemoteClientSide";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "PC-RemoteClientSide";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -311,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = ZSLUMCNRNL;
 				INFOPLIST_FILE = PC_RemoteClientSide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PedroVargas.PC-RemoteClientSide";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "PC-RemoteClientSide";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
