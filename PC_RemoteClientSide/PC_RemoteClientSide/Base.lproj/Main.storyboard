@@ -15,22 +15,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTi-y5-uH4">
-                                <rect key="frame" x="156" y="490" width="103" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="diminui volume"/>
-                                <connections>
-                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WUS-6h-gcm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGq-wa-IWR">
-                                <rect key="frame" x="151" y="346" width="113" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="aumenta volume"/>
-                                <connections>
-                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dm6-HN-iSY"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Pr7-Yk-3Ad">
+                                <rect key="frame" x="136" y="228" width="142" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGq-wa-IWR">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="30"/>
+                                        <state key="normal" title="aumentar volume"/>
+                                        <connections>
+                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dm6-HN-iSY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTi-y5-uH4">
+                                        <rect key="frame" x="0.0" y="90" width="142" height="30"/>
+                                        <state key="normal" title="diminuir volume"/>
+                                        <connections>
+                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WUS-6h-gcm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzD-bL-LgF">
+                                        <rect key="frame" x="0.0" y="180" width="142" height="30"/>
+                                        <state key="normal" title="desligar monitor"/>
+                                        <connections>
+                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OfX-FD-AXD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQZ-8f-Shb">
+                                        <rect key="frame" x="0.0" y="270" width="142" height="30"/>
+                                        <state key="normal" title="desligar computador"/>
+                                        <connections>
+                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rzL-KW-cyJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -38,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-228" y="-1"/>
+            <point key="canvasLocation" x="-228.98550724637684" y="-1.3392857142857142"/>
         </scene>
     </scenes>
 </document>
