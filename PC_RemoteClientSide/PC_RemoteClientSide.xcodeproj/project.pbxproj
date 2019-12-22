@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07E3382D23ACBF4100A46F06 /* PC-RemoteClientSide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PC-RemoteClientSide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07E3382D23ACBF4100A46F06 /* Remote Controller for PC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remote Controller for PC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E3383023ACBF4100A46F06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07E3383223ACBF4100A46F06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		07E3383423ACBF4100A46F06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		07E3382E23ACBF4100A46F06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07E3382D23ACBF4100A46F06 /* PC-RemoteClientSide.app */,
+				07E3382D23ACBF4100A46F06 /* Remote Controller for PC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,7 +90,7 @@
 			);
 			name = PC_RemoteClientSide;
 			productName = PC_RemoteClientSide;
-			productReference = 07E3382D23ACBF4100A46F06 /* PC-RemoteClientSide.app */;
+			productReference = 07E3382D23ACBF4100A46F06 /* Remote Controller for PC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -302,7 +302,7 @@
 				);
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PedroVargas.PC-RemoteClientSide";
-				PRODUCT_NAME = "PC-RemoteClientSide";
+				PRODUCT_NAME = "Remote Controller for PC";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -322,7 +322,7 @@
 				);
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PedroVargas.PC-RemoteClientSide";
-				PRODUCT_NAME = "PC-RemoteClientSide";
+				PRODUCT_NAME = "Remote Controller for PC";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

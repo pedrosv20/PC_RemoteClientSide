@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Pr7-Yk-3Ad">
-                                <rect key="frame" x="136" y="228" width="142" height="300"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Pr7-Yk-3Ad">
+                                <rect key="frame" x="136" y="303" width="142" height="300"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGq-wa-IWR">
                                         <rect key="frame" x="0.0" y="0.0" width="142" height="30"/>
@@ -50,6 +50,12 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pr7-Yk-3Ad" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.366748" id="Q1D-cc-A0W"/>
+                            <constraint firstItem="Pr7-Yk-3Ad" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iaB-Ad-ylL"/>
+                            <constraint firstItem="Pr7-Yk-3Ad" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="l1j-9X-P4s"/>
+                            <constraint firstItem="Pr7-Yk-3Ad" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.342995" id="uI5-A3-VEo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
