@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ujs-3L-lYe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setup View Controller-->
+        <scene sceneID="dRH-he-hTm">
+            <objects>
+                <viewController id="Ujs-3L-lYe" customClass="SetupViewController" customModule="Remote_Controller_for_PC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mq1-J9-xVA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzu-5v-wIc">
+                                <rect key="frame" x="174.5" y="541" width="65" height="30"/>
+                                <state key="normal" title="continuar"/>
+                                <connections>
+                                    <action selector="okTapped:" destination="Ujs-3L-lYe" eventType="touchUpInside" id="kor-Eu-onH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eob-xC-iUa">
+                                <rect key="frame" x="56.5" y="156" width="301" height="101.5"/>
+                                <string key="text">Para descobrir seu endereço de ip Abra o cmd no computador windows Digite o comando "ipconfig" Após isso vá até o endereço de ipv4 Então copie ele no campo abaixo.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira aqui seu IP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JFJ-oo-Jkv">
+                                <rect key="frame" x="107.5" y="436" width="199" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="didEndEditing:" destination="Ujs-3L-lYe" eventType="editingDidEnd" id="UhG-Wm-1uz"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kzu-5v-wIc" firstAttribute="top" secondItem="JFJ-oo-Jkv" secondAttribute="bottom" constant="71" id="8Zj-4i-XMH"/>
+                            <constraint firstItem="eob-xC-iUa" firstAttribute="centerX" secondItem="3GS-xI-0Y5" secondAttribute="centerX" id="B6M-bn-s7m"/>
+                            <constraint firstItem="JFJ-oo-Jkv" firstAttribute="centerY" secondItem="3GS-xI-0Y5" secondAttribute="centerY" id="Bjv-Wf-f7R"/>
+                            <constraint firstItem="JFJ-oo-Jkv" firstAttribute="centerX" secondItem="3GS-xI-0Y5" secondAttribute="centerX" id="DJo-Lk-pKV"/>
+                            <constraint firstItem="kzu-5v-wIc" firstAttribute="width" secondItem="mq1-J9-xVA" secondAttribute="width" multiplier="0.157005" id="Hsj-rv-aCO"/>
+                            <constraint firstItem="JFJ-oo-Jkv" firstAttribute="width" secondItem="mq1-J9-xVA" secondAttribute="width" multiplier="0.480676" id="OdB-h8-k9K"/>
+                            <constraint firstItem="eob-xC-iUa" firstAttribute="width" secondItem="mq1-J9-xVA" secondAttribute="width" multiplier="0.727053" id="SdU-uI-gmj"/>
+                            <constraint firstItem="kzu-5v-wIc" firstAttribute="centerX" secondItem="JFJ-oo-Jkv" secondAttribute="centerX" id="YZ2-94-mtj"/>
+                            <constraint firstItem="eob-xC-iUa" firstAttribute="top" secondItem="3GS-xI-0Y5" secondAttribute="top" constant="112" id="bNl-MN-UJA"/>
+                            <constraint firstItem="JFJ-oo-Jkv" firstAttribute="height" secondItem="mq1-J9-xVA" secondAttribute="height" multiplier="0.0379464" id="jmC-gj-jyb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3GS-xI-0Y5"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="JFJ-oo-Jkv" id="iNa-YA-6mU"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="showButtons" modalPresentationStyle="overFullScreen" id="IyH-aB-m6c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vi4-yq-1Hc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-838" y="-12"/>
+        </scene>
+        <!--Buttons View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ButtonsViewController" customModule="Remote_Controller_for_PC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Pr7-Yk-3Ad">
+                                <rect key="frame" x="136" y="303" width="142" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGq-wa-IWR">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="30"/>
+                                        <state key="normal" title="aumentar volume"/>
+                                        <connections>
+                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dm6-HN-iSY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTi-y5-uH4">
+                                        <rect key="frame" x="0.0" y="90" width="142" height="30"/>
+                                        <state key="normal" title="diminuir volume"/>
+                                        <connections>
+                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WUS-6h-gcm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzD-bL-LgF">
+                                        <rect key="frame" x="0.0" y="180" width="142" height="30"/>
+                                        <state key="normal" title="desligar monitor"/>
+                                        <connections>
+                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OfX-FD-AXD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQZ-8f-Shb">
+                                        <rect key="frame" x="0.0" y="270" width="142" height="30"/>
+                                        <state key="normal" title="desligar computador"/>
+                                        <connections>
+                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rzL-KW-cyJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pr7-Yk-3Ad" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.366748" id="Q1D-cc-A0W"/>
+                            <constraint firstItem="Pr7-Yk-3Ad" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iaB-Ad-ylL"/>
+                            <constraint firstItem="Pr7-Yk-3Ad" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="l1j-9X-P4s"/>
+                            <constraint firstItem="Pr7-Yk-3Ad" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.342995" id="uI5-A3-VEo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EtX-sM-sdb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80" y="-12"/>
+        </scene>
+    </scenes>
+</document>

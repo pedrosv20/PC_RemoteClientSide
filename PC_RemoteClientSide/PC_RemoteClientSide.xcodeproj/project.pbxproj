@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073A388123B0287900F78CDF /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073A388023B0287900F78CDF /* SetupViewController.swift */; };
+		073A388323B028D800F78CDF /* ModelClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073A388223B028D800F78CDF /* ModelClient.swift */; };
 		07E3383123ACBF4100A46F06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3383023ACBF4100A46F06 /* AppDelegate.swift */; };
 		07E3383323ACBF4100A46F06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3383223ACBF4100A46F06 /* SceneDelegate.swift */; };
-		07E3383523ACBF4100A46F06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3383423ACBF4100A46F06 /* ViewController.swift */; };
+		07E3383523ACBF4100A46F06 /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3383423ACBF4100A46F06 /* ButtonsViewController.swift */; };
 		07E3383823ACBF4100A46F06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E3383623ACBF4100A46F06 /* Main.storyboard */; };
 		07E3383A23ACBF4400A46F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E3383923ACBF4400A46F06 /* Assets.xcassets */; };
 		07E3383D23ACBF4400A46F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E3383B23ACBF4400A46F06 /* LaunchScreen.storyboard */; };
@@ -18,10 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		073A388023B0287900F78CDF /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		073A388223B028D800F78CDF /* ModelClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClient.swift; sourceTree = "<group>"; };
 		07E3382D23ACBF4100A46F06 /* Remote Controller for PC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remote Controller for PC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E3383023ACBF4100A46F06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07E3383223ACBF4100A46F06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		07E3383423ACBF4100A46F06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07E3383423ACBF4100A46F06 /* ButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
 		07E3383723ACBF4100A46F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07E3383923ACBF4400A46F06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E3383C23ACBF4400A46F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +45,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		073A387D23B0276A00F78CDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07E3384423ACBF5100A46F06 /* Client.swift */,
+				07E3384623ACBF6900A46F06 /* ClientConnection.swift */,
+				073A388223B028D800F78CDF /* ModelClient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		073A387E23B0277100F78CDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07E3383623ACBF4100A46F06 /* Main.storyboard */,
+				07E3383B23ACBF4400A46F06 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		073A387F23B0277900F78CDF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				073A388023B0287900F78CDF /* SetupViewController.swift */,
+				07E3383423ACBF4100A46F06 /* ButtonsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		07E3382423ACBF4100A46F06 = {
 			isa = PBXGroup;
 			children = (
@@ -62,13 +94,11 @@
 			children = (
 				07E3383023ACBF4100A46F06 /* AppDelegate.swift */,
 				07E3383223ACBF4100A46F06 /* SceneDelegate.swift */,
-				07E3383423ACBF4100A46F06 /* ViewController.swift */,
-				07E3383623ACBF4100A46F06 /* Main.storyboard */,
 				07E3383923ACBF4400A46F06 /* Assets.xcassets */,
-				07E3383B23ACBF4400A46F06 /* LaunchScreen.storyboard */,
 				07E3383E23ACBF4400A46F06 /* Info.plist */,
-				07E3384423ACBF5100A46F06 /* Client.swift */,
-				07E3384623ACBF6900A46F06 /* ClientConnection.swift */,
+				073A387F23B0277900F78CDF /* Controller */,
+				073A387E23B0277100F78CDF /* View */,
+				073A387D23B0276A00F78CDF /* Model */,
 			);
 			path = PC_RemoteClientSide;
 			sourceTree = "<group>";
@@ -144,10 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07E3383523ACBF4100A46F06 /* ViewController.swift in Sources */,
+				07E3383523ACBF4100A46F06 /* ButtonsViewController.swift in Sources */,
 				07E3383123ACBF4100A46F06 /* AppDelegate.swift in Sources */,
 				07E3384523ACBF5100A46F06 /* Client.swift in Sources */,
 				07E3384723ACBF6900A46F06 /* ClientConnection.swift in Sources */,
+				073A388323B028D800F78CDF /* ModelClient.swift in Sources */,
+				073A388123B0287900F78CDF /* SetupViewController.swift in Sources */,
 				07E3383323ACBF4100A46F06 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +328,7 @@
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = ZSLUMCNRNL;
 				INFOPLIST_FILE = PC_RemoteClientSide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +349,7 @@
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = ZSLUMCNRNL;
 				INFOPLIST_FILE = PC_RemoteClientSide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

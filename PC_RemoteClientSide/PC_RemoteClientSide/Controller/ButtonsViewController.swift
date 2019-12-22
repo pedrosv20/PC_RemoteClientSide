@@ -8,15 +8,17 @@
 import Network
 import UIKit
 
-class ViewController: UIViewController {
+class ButtonsViewController: UIViewController {
     var cliente: Client!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
-        cliente = initClient(server: "192.168.0.14", port: 2000)
+        //"192.168.0.14"
+        cliente = initClient(server: ModelClient.shared.ip_adress!, port: 2000)
         
         
-        
+        //TODO: back button resets model
         
     }
     
