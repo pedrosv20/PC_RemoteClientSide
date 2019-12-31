@@ -73,28 +73,28 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Pr7-Yk-3Ad">
                                 <rect key="frame" x="136" y="303" width="142" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGq-wa-IWR">
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGq-wa-IWR">
                                         <rect key="frame" x="0.0" y="0.0" width="142" height="30"/>
                                         <state key="normal" title="aumentar volume"/>
                                         <connections>
                                             <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dm6-HN-iSY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTi-y5-uH4">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTi-y5-uH4">
                                         <rect key="frame" x="0.0" y="90" width="142" height="30"/>
                                         <state key="normal" title="diminuir volume"/>
                                         <connections>
                                             <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WUS-6h-gcm"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzD-bL-LgF">
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzD-bL-LgF">
                                         <rect key="frame" x="0.0" y="180" width="142" height="30"/>
                                         <state key="normal" title="desligar monitor"/>
                                         <connections>
                                             <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OfX-FD-AXD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQZ-8f-Shb">
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQZ-8f-Shb">
                                         <rect key="frame" x="0.0" y="270" width="142" height="30"/>
                                         <state key="normal" title="desligar computador"/>
                                         <connections>
