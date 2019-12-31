@@ -103,12 +103,25 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyo-DM-jnV">
+                                <rect key="frame" x="20" y="44" width="73" height="67"/>
+                                <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ysq-SE-vsZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="pyo-DM-jnV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.176329" id="EwR-VX-kGr"/>
                             <constraint firstItem="Pr7-Yk-3Ad" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.366748" id="Q1D-cc-A0W"/>
+                            <constraint firstItem="pyo-DM-jnV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TB0-Mv-eCe"/>
+                            <constraint firstItem="pyo-DM-jnV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="X2D-ar-LtE"/>
                             <constraint firstItem="Pr7-Yk-3Ad" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iaB-Ad-ylL"/>
                             <constraint firstItem="Pr7-Yk-3Ad" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="l1j-9X-P4s"/>
+                            <constraint firstItem="pyo-DM-jnV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0747768" id="pot-h1-P1W"/>
                             <constraint firstItem="Pr7-Yk-3Ad" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.342995" id="uI5-A3-VEo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -117,7 +130,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-80" y="-12"/>
+            <point key="canvasLocation" x="-81.159420289855078" y="-12.053571428571429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="64" height="52"/>
+    </resources>
 </document>

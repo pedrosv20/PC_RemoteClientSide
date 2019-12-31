@@ -22,13 +22,17 @@ class SetupViewController: UIViewController, UITextFieldDelegate{
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.textField.text = ""
+    }
+    
 
     @IBAction func didEndEditing(_ sender: UITextField) {
         //192.168.0.14
-        if sender.text?.count == 12 {
-            ModelClient.shared.ip_adress = sender.text!
-            print(ModelClient.shared.ip_adress)
-        }
+        
+        ModelClient.shared.ip_adress = sender.text!
+        print(ModelClient.shared.ip_adress)
+        
         
     }
     

@@ -29,8 +29,14 @@ class ButtonsViewController: UIViewController {
         
         
     }
+    
     @IBAction func action(_ sender: UIButton) {
         cliente.send(data: (sender.titleLabel!.text!))
+    }
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: false) {
+            ModelClient.shared.ip_adress = nil
+        }
     }
     
 }
